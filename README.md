@@ -16,6 +16,7 @@ Now add the libsqlite3.dylib under the "Link Binary with Libraries" item on the 
 
 ##Usage##
 The query to the database returns a dictionary with strings for different values.  You will have to translate these strings into the appropriate format to use them directly.
+
 ```
 NSDictionary *results = [OCZipLookupController lookupZipCode:95521];
 ```
