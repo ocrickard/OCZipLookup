@@ -15,6 +15,9 @@
 		B1CFECBE153F8A6800297565 /* OCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFECBD153F8A6800297565 /* OCAppDelegate.m */; };
 		B1CFECC1153F8A6800297565 /* OCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFECC0153F8A6800297565 /* OCViewController.m */; };
 		B1CFECC4153F8A6800297565 /* OCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CFECC2153F8A6800297565 /* OCViewController.xib */; };
+		B1CFECDE153F8C4400297565 /* OCZipLookupController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFECDD153F8C4400297565 /* OCZipLookupController.m */; };
+		B1CFECE0153F8C8B00297565 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CFECDF153F8C8B00297565 /* libsqlite3.dylib */; };
+		B1CFECE1153F917800297565 /* zip.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B1CFECCB153F8A8900297565 /* zip.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,19 @@
 		B1CFECAD153F8A6800297565 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B1CFECAF153F8A6800297565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B1CFECB1153F8A6800297565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B1CFECB5153F8A6800297565 /* OCZipLookup-Info.plist */ = {isa = PBXFileReference; path = "OCZipLookup-Info.plist"; sourceTree = "<group>"; };
+		B1CFECB5153F8A6800297565 /* OCZipLookup-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCZipLookup-Info.plist"; sourceTree = "<group>"; };
 		B1CFECB7153F8A6800297565 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1CFECB9153F8A6800297565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B1CFECBB153F8A6800297565 /* OCZipLookup-Prefix.pch */ = {isa = PBXFileReference; path = "OCZipLookup-Prefix.pch"; sourceTree = "<group>"; };
-		B1CFECBC153F8A6800297565 /* OCAppDelegate.h */ = {isa = PBXFileReference; path = OCAppDelegate.h; sourceTree = "<group>"; };
+		B1CFECBB153F8A6800297565 /* OCZipLookup-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCZipLookup-Prefix.pch"; sourceTree = "<group>"; };
+		B1CFECBC153F8A6800297565 /* OCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCAppDelegate.h; sourceTree = "<group>"; };
 		B1CFECBD153F8A6800297565 /* OCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCAppDelegate.m; sourceTree = "<group>"; };
-		B1CFECBF153F8A6800297565 /* OCViewController.h */ = {isa = PBXFileReference; path = OCViewController.h; sourceTree = "<group>"; };
+		B1CFECBF153F8A6800297565 /* OCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCViewController.h; sourceTree = "<group>"; };
 		B1CFECC0153F8A6800297565 /* OCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCViewController.m; sourceTree = "<group>"; };
 		B1CFECC3153F8A6800297565 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OCViewController.xib; sourceTree = "<group>"; };
+		B1CFECCB153F8A8900297565 /* zip.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = zip.sqlite; sourceTree = "<group>"; };
+		B1CFECDC153F8C4400297565 /* OCZipLookupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCZipLookupController.h; sourceTree = "<group>"; };
+		B1CFECDD153F8C4400297565 /* OCZipLookupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCZipLookupController.m; sourceTree = "<group>"; };
+		B1CFECDF153F8C8B00297565 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CFECE0153F8C8B00297565 /* libsqlite3.dylib in Frameworks */,
 				B1CFECAE153F8A6800297565 /* UIKit.framework in Frameworks */,
 				B1CFECB0153F8A6800297565 /* Foundation.framework in Frameworks */,
 				B1CFECB2153F8A6800297565 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +75,7 @@
 		B1CFECAC153F8A6800297565 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1CFECDF153F8C8B00297565 /* libsqlite3.dylib */,
 				B1CFECAD153F8A6800297565 /* UIKit.framework */,
 				B1CFECAF153F8A6800297565 /* Foundation.framework */,
 				B1CFECB1153F8A6800297565 /* CoreGraphics.framework */,
@@ -77,6 +86,7 @@
 		B1CFECB3153F8A6800297565 /* OCZipLookup */ = {
 			isa = PBXGroup;
 			children = (
+				B1CFECCA153F8A7B00297565 /* OCZipLookup */,
 				B1CFECBC153F8A6800297565 /* OCAppDelegate.h */,
 				B1CFECBD153F8A6800297565 /* OCAppDelegate.m */,
 				B1CFECBF153F8A6800297565 /* OCViewController.h */,
@@ -96,6 +106,16 @@
 				B1CFECBB153F8A6800297565 /* OCZipLookup-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1CFECCA153F8A7B00297565 /* OCZipLookup */ = {
+			isa = PBXGroup;
+			children = (
+				B1CFECCB153F8A8900297565 /* zip.sqlite */,
+				B1CFECDC153F8C4400297565 /* OCZipLookupController.h */,
+				B1CFECDD153F8C4400297565 /* OCZipLookupController.m */,
+			);
+			name = OCZipLookup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1CFECE1153F917800297565 /* zip.sqlite in Resources */,
 				B1CFECB8153F8A6800297565 /* InfoPlist.strings in Resources */,
 				B1CFECC4153F8A6800297565 /* OCViewController.xib in Resources */,
 			);
@@ -165,6 +186,7 @@
 				B1CFECBA153F8A6800297565 /* main.m in Sources */,
 				B1CFECBE153F8A6800297565 /* OCAppDelegate.m in Sources */,
 				B1CFECC1153F8A6800297565 /* OCViewController.m in Sources */,
+				B1CFECDE153F8C4400297565 /* OCZipLookupController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

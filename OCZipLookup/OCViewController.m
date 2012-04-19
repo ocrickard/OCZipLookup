@@ -7,6 +7,7 @@
 //
 
 #import "OCViewController.h"
+#import "OCZipLookupController.h"
 
 @interface OCViewController ()
 
@@ -18,6 +19,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSDate *startTime = [NSDate date];
+    
+    NSDictionary *results = [OCZipLookupController lookupZipCode:95521];
+    
+    NSLog(@"%@", results.description);
+    
+    NSLog(@"Time Since Beginning:%f", -[startTime timeIntervalSinceNow]);
 }
 
 - (void)viewDidUnload
