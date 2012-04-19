@@ -22,8 +22,13 @@ NSDictionary *results = [OCZipLookupController lookupZipCode:95521];
 ```
 
 The dictionary has the following key/object pairs:
-* "state_abbreviation"
-* "latitude"
-* "longitude"
-* "city"
-* "state"
+
+"state_abbreviation"
+
+"latitude"
+
+"longitude"
+
+"city"
+
+"state"
